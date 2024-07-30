@@ -70,15 +70,15 @@
     ],
     "rdbSchedules": {
       "stop": {
-        "minute": "50",
-        "hour": "10",
+        "minute": "40",
+        "hour": "8",
         "day": "*",
         "month": "*",
         "year": "*"
       },
       "start": {
         "minute": "40",
-        "hour": "2",
+        "hour": "7",
         "day": "*",
         "month": "*",
         "year": "*"
