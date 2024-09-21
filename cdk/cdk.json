@@ -60,7 +60,7 @@
     ],
     "identityProviders": [],
     "userPoolDomainPrefix": "",
-    "allowedSignUpEmailDomains": [],
+    "allowedSignUpEmailDomains": ["mail.huji.ac.il", "savion.huji.ac.il"],
     "autoJoinUserGroups": ["CreatingBotAllowed"],
     "selfSignUpEnabled": true,
     "publishedApiAllowedIpV4AddressRanges": ["0.0.0.0/1", "128.0.0.0/1"],
@@ -69,12 +69,24 @@
       "8000:0000:0000:0000:0000:0000:0000:0000/1"
     ],
     "rdbSchedules": {
-      "stop": {},
-      "start": {}
+      "stop": {
+        "minute": "40",
+        "hour": "8",
+        "day": "*",
+        "month": "*",
+        "year": "*"
+      },
+      "start": {
+        "minute": "40",
+        "hour": "7",
+        "day": "*",
+        "month": "*",
+        "year": "*"
+      }
     },
     "embeddingContainerVcpu": 2048,
     "embeddingContainerMemory": 4096,
-    "natgatewayCount": 2,
+    "natgatewayCount": 1,
     "useBedrockKnowledgeBaseForRag": false
   }
 }
